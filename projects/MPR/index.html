@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mathematics Presentation Renderer</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      showMathMenu: false,
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/SVG"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { fonts: ["TeX"] },
+      SVG:{
+        useGlobalCache: false,
+        scale: 120,
+        minScaleAdjust: 50
+      }
+    });
+  </script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js">
+</script>
+
+<script src="./script.js"></script>
+</head>
+<body>
+<div>
+    <div class="title"></div><h1>Mathematics Presentation Renderer</h1></div>
+    <div class="desc">
+      <h3>A simple program that can helps capture Mathematics presentation from <a src="#"> $\LaTeX$ </a> code.</h3>
+      <h3>Check out <a href="https://github.com/fai516/Mathematics-Presentation-Renderer">https://github.com/fai516/Mathematics-Presentation-Renderer</a> for source code.</h3>
+    </div>
+    <div id="example">
+        <h4>Example:</h4>
+        <input type="button" value="Normal Distribution" onclick="putExample(pickExample(1))"/>
+        <input type="button" value="Euler's Identity" onclick="putExample(pickExample(2))"/>
+        <input type="button" value="Euler's Number" onclick="putExample(pickExample(3))"/>
+        <input type="button" value="Euler's Formula" onclick="putExample(pickExample(4))"/>
+        <input type="button" value="Gamma Function" onclick="putExample(pickExample(5))"/>
+        <input type="button" value="Gaussian integral" onclick="putExample(pickExample(6))"/>
+    </div>
+    <br/>
+    <form action="#" onsubmit="draftSubmission();return false">
+        <textarea id="mathText" rows="5" cols="10" placeholder="Enter your latex code here..."></textarea>
+        <br/><input type="submit"/>
+        <input id="clearContent" type="button" value="Clear" onclick="clearDraft()"/>
+    </form>
+</div>
+<div id="result">
+    <h2>Result (SVG) :</h2>
+    <div id="HTML_CSS"></div>
+    <h2>SVG Encoding:</h2>
+    <form action="#" >
+        <textarea id="svgCode" rows="2" cols="2"></textarea>
+        <br/>
+        <input id="copyContent" type="button" value="Copy" onclick="copySVGCodetoClipboard(3)"/>
+        <input id="saveAsPNG" type="button" value="Export As PNG" onclick="svgToPng()"/>
+    </form>
+    <canvas style="display:none;" id="canvas"></canvas>
+</div>
+
+</body>
+</html>
