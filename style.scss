@@ -89,7 +89,7 @@ h1{
   }
   .flex{
     .container {
-      min-width: 0px;
+      min-width: 340px;
       .title{
         font-size: 1em;
       }
@@ -102,5 +102,18 @@ h1{
       }
     }
   }
-  width: 95%;
+}
+@media only screen and (max-width:320px){
+  h1{
+    font-size: 2em;
+  }
+  .page{
+    width:100%;
+  }
+  .flex{
+    .container {
+      min-width: 0px;
+
+    }
+  }
 }
