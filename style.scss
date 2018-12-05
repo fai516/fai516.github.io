@@ -90,6 +90,9 @@ h1{
   .flex{
     .container {
       min-width: 0px;
+      .title{
+        font-size: 1em;
+      }
       .pic{
         min-height: 0px;
         padding: 10px 0;

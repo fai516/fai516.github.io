@@ -121,6 +121,9 @@ h1 {
   .flex .container {
     min-width: 0px;
   }
+  .flex .container .title {
+    font-size: 1em;
+  }
   .flex .container .pic {
     min-height: 0px;
     padding: 10px 0;
