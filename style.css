@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   font-size: 5em;
   color: #3fff00;
-  text-shadow: 0px 0px 10px #45A29E;
+  text-shadow: 0px 0px 1px #3fff00;
 }
 
 .flex {
@@ -109,6 +109,43 @@ h1 {
 .flex .container .desc {
   background-color: transparent;
   padding: 15px 0;
+}
+
+.right-corner {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.right-corner .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-corner .contact .fab {
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+.right-corner .contact .fab.fa-linkedin {
+  background: radial-gradient(circle at center, white 63.5%, transparent 0%);
+  color: #008fc4;
+}
+
+.right-corner .contact .fab.fa-linkedin:hover {
+  text-shadow: 0 0 3px white;
+  cursor: pointer;
+}
+
+.right-corner .contact .fab.fa-github-square {
+  color: #23282E;
+  background: radial-gradient(circle at center, white 63.5%, transparent 0%);
+}
+
+.right-corner .contact .fab.fa-github-square:hover {
+  text-shadow: 0 0 3px white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 425px) {
