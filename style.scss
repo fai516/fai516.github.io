@@ -1,6 +1,7 @@
 $text-shadow: 2px 2px #45A29E;
 $container-transition: linear 0.3s;
 body{
+  background-image: url('./bg.jpg');
   background-color: #423e3e;
   font-family: 'Roboto', sans-serif;
 }
@@ -38,7 +39,7 @@ h1{
   text-align: center;
   font-size: 5em;
   color: #3fff00;
-  text-shadow: 0px 0px 1px #3fff00;
+  text-shadow: 0px 0px 5px black;
 }
 .flex{
   display: flex;
