@@ -1,3 +1,3 @@
-import React from "react"
+import React from "react";
 
-export default () => <div>Hello world!</div>
+export default () => (<div style={{color: `red`, fontSize: `100px`}}>test!</div>);
