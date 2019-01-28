@@ -25,13 +25,14 @@ let mapping = {
 let json = {};
 
 let metaData = function(str){
+  if (json[str]=="") return "";
   switch(str){
     case "name": return `<span style="font-weight:bold">${json[str]}</span>`;
     case "position": return `${json[str]}`;
     case "email": return `<a href="mailto:${json[str]}">${json[str]}</a>`;
     case "dl": return `D +852 ${json[str]} `;
     case "hkm": return `HKM +852 ${json[str]} `;
-    case "chm": return `CHM +852 ${json[str]} `;
+    case "chm": return `CHM +86 ${json[str]} `;
     default: return "";
   }
 }
