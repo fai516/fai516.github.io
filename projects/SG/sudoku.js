@@ -3,7 +3,7 @@ const version = "v1.0a";
 class Square extends React.Component {
   render() {
     return (
-      <div className="square">
+      <li className="square">
         <input
           type="text"
           id={this.props.id}
@@ -13,7 +13,7 @@ class Square extends React.Component {
           onChange={this.props.handleInput}
           readOnly
         />
-      </div>
+      </li>
     );
   }
 }
