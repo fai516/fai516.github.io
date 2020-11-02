@@ -12,6 +12,7 @@ body {
   max-width: 350px;
   max-height: 350px;
   margin: inherit;
+  padding: 0;
   grid-gap: 0rem;
   -ms-grid-rows: (1fr)[9];
   -ms-grid-columns: (1fr)[9];
@@ -21,6 +22,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  list-style: none;
 }
 
 #game #puzzle .square {

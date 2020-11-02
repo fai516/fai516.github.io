@@ -36,7 +36,7 @@ class Puzzle extends React.Component {
         />
       );
     }
-    return <div id="puzzle">{squareItems}</div>;
+    return <ul id="puzzle">{squareItems}</ul>;
   }
 }
 

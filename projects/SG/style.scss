@@ -15,10 +15,12 @@ body{
     max-width:$size;
     max-height: $size;
     margin: inherit;
+    padding: 0;
     grid-gap: 0rem;
     grid-template: repeat(9,1fr)/repeat(9,1fr);
     justify-content: center;
     align-content: center;
+    list-style: none;
 
     .square{
       margin: 0;
