@@ -57,8 +57,8 @@ class Game extends React.Component {
 
     this.state = {
       version: version,
-      squares: Array(81).fill("0"),
-      //squares: tmp,
+      // squares: Array(81).fill("0"),
+      squares: tmp,
       message: "",
     };
     this.handleSquareInput = this.handleSquareInput.bind(this);
