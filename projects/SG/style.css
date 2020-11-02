@@ -9,8 +9,8 @@ body {
 #game #puzzle {
   display: -ms-grid;
   display: grid;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
   margin: inherit;
   -ms-grid-rows: (1fr)[9];
   -ms-grid-columns: (1fr)[9];

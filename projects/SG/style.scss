@@ -11,8 +11,8 @@ body{
   margin: auto;
   #puzzle{
     display: grid;
-    width:$size;
-    height: $size;
+    max-width:$size;
+    max-height: $size;
     margin: inherit;
     grid-template: repeat(9,1fr)/repeat(9,1fr);
 
