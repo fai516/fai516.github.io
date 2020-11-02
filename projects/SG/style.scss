@@ -21,6 +21,7 @@ body{
       justify-content: center;
       align-items: center;
       border: 1px dashed black;
+      height: 10px;
       &:nth-child(9n-5),
       &:nth-child(9n-2){
         border-left: $border;

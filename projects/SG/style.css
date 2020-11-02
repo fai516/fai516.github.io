@@ -28,6 +28,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px dashed black;
+  height: 10px;
 }
 
 #game #puzzle .square:nth-child(9n-5), #game #puzzle .square:nth-child(9n-2) {
