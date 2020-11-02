@@ -4,15 +4,16 @@ class Square extends React.Component {
   render() {
     return (
       <li className="square">
-        <input
+        {/* <input
           type="text"
           id={this.props.id}
-          maxLength="2"
+          maxLength="1"
           value={this.props.value}
           //defaultValue={this.props.id}
           onChange={this.props.handleInput}
           readOnly
-        />
+        /> */}
+        <span>{this.props.value}</span>
       </li>
     );
   }
