@@ -1,6 +1,6 @@
 $size: 350px;
 $border: 2px solid black;
-$shadow-color: hsl(0,0%,10%);
+$shadow-color: hsl(0,0%,80%);
 $font: 'Roboto', sans-serif;
 $input-size: 90%;
 $input-font-size: 30px;
@@ -20,6 +20,8 @@ body{
       // display: flex;
       // justify-content: center;
       // align-items: center;
+      width: 100%;
+      height: 100%;
       border: 1px dashed black;
       margin: 0;
       padding: 0;
