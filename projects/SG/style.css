@@ -40,7 +40,7 @@ body {
 }
 
 #game #puzzle .square:nth-child(9n-3), #game #puzzle .square:nth-child(9n-4), #game #puzzle .square:nth-child(9n-5), #game #puzzle .square:nth-child(n+28):nth-child(-n+36), #game #puzzle .square:nth-child(n+37):nth-child(-n+45), #game #puzzle .square:nth-child(n+46):nth-child(-n+54) {
-  background-color: #cccccc;
+  background-color: #1a1a1a;
 }
 
 #game #puzzle .square:nth-child(n+31):nth-child(-n+33), #game #puzzle .square:nth-child(n+40):nth-child(-n+42), #game #puzzle .square:nth-child(n+49):nth-child(-n+51) {
